@@ -18,6 +18,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuickNote">
         <activity
+            android:name=".AboutActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ListActivity" />
+        </activity>
+
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">
@@ -27,7 +35,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ListActivity"
             android:parentActivityName=".MainActivity">

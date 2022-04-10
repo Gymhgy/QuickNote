@@ -5,9 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#DADADA"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="About!"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="409dp"
         android:layout_height="729dp"
+        android:backgroundTint="#BDBDBD"
+        android:fillViewport="true"
+        android:foregroundTint="#C1C1C1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -15,8 +32,8 @@
             android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/titleText"

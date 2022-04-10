@@ -277,8 +277,9 @@ public class MainActivity extends AppCompatActivity {
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-                    // Handle error
-                }
+                    Toast.makeText(MainActivity.this, Html.fromHtml("<font color='#ff0000' ><b>" +
+                                    "Could not open camera" + "</b></font>"),
+                            Toast.LENGTH_LONG).show();                }
             });
 
 
